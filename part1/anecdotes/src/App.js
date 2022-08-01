@@ -1,6 +1,5 @@
 import { useState } from 'react'
 const Votes = ({points,anecdotes}) => {
-    console.log(points)
     const Max = Math.max(...points)
     const Index = points.indexOf(Max)
     return(
@@ -46,8 +45,6 @@ const App = () => {
     copy[selected] += 1
     setPoints(copy)
   }
-
-  //const upVote = () => {copy[selected] += 1 console.log(copy)console.log(copy[selected])}
   
   return (
     <div>
@@ -63,7 +60,3 @@ const App = () => {
 }
 
 export default App
-
-  //function to get range between (min,max) inclusive
-  //var randomIntRange = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
-//https://stackoverflow.com/questions/1527803/generating-random-whole-numbers-in-javascript-in-a-specific-range
